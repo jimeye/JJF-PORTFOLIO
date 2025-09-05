@@ -62,15 +62,9 @@ export default function Header() {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-<<<<<<< HEAD
             <nav className="md:hidden bg-[#fafafc] py-4 px-6 space-y-4 text-sm">
               <a href="/" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 Home
-=======
-            <nav className="md:hidden bg-[#f9f7f2] py-4 px-6 space-y-4 text-sm">
-              <a href="#services" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
-                Services
->>>>>>> e7536d745a1df402c81758711eec9e1234c31283
               </a>
               <a href="#pricing" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 Ressources
