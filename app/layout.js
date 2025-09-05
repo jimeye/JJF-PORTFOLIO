@@ -5,12 +5,12 @@ import { LanguageProvider } from '../contexts/LanguageContext'
 import { structuredData, localBusinessData, faqData } from './structured-data'
 
 export const metadata = {
-  title: 'JOSEPH STUDIO CREATIVE - Site internet dernière génération à 1€ | Création Web Next.js/React',
+  title: 'JIMMY JOSEPH FELLOUS - PortFolio - Directeur Artistique & Dév Full Stack',
   description: 'Création de sites web Next.js/React ultra modernes avec financement d\'aides publiques inclus. Performance, design et SEO optimisés. Maintenance 1 an incluse. Sites web à partir de 1€ HT.',
   keywords: 'création site web, Next.js, React, développement web, aides publiques, site internet 1€, SEO, performance, design moderne, maintenance site web, France',
-  authors: [{ name: 'JOSEPH STUDIO CREATIVE' }],
-  creator: 'JOSEPH STUDIO CREATIVE',
-  publisher: 'JOSEPH STUDIO CREATIVE',
+  authors: [{ name: 'JIMMY JOSEPH FELLOUS' }],
+  creator: 'JIMMY JOSEPH FELLOUS',
+  publisher: 'JIMMY JOSEPH FELLOUS',
   formatDetection: {
     email: false,
     address: false,
