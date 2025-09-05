@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
       {/* Main Header */}
-      <header className="bg-[#fafafa] shadow-lg sticky top-0 z-50" style={{ backgroundColor: '#fafafa', paddingBottom: '1px', borderTop: '2.5px dotted #16214a', borderBottom: '2.5px dotted #16214a' }}>
+      <header className="bg-[#fafafc] shadow-lg sticky top-0 z-50" style={{ backgroundColor: '#fafafc', paddingBottom: '1px', borderTop: '2.5px dotted #16214a', borderBottom: '2.5px dotted #16214a' }}>
         <div className="fluid-container">
           <div className="flex items-center justify-center pt-1 pb-0 px-2 relative">
             {/* Logo - Center */}
@@ -47,7 +47,7 @@ export default function Header() {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <nav className="md:hidden bg-[#fafafa] py-4 px-6 space-y-4 text-sm">
+            <nav className="md:hidden bg-[#fafafc] py-4 px-6 space-y-4 text-sm">
               <a href="/" className="block hover:text-accent transition-colors" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Bold 24', fontWeight: '700' }} onClick={() => setIsMenuOpen(false)}>
                 Home
               </a>

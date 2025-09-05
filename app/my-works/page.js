@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from 'react';
 
 export default function JJFPortfolioPage() {
   return (
-    <div className="bg-[#fafafa] pt-8 relative" style={{ zIndex: 1000 }}>
+    <div className="bg-[#fafafc] pt-8 relative" style={{ zIndex: 1000 }}>
       {/* Main Content */}
       <main className="w-full px-8 relative" style={{ zIndex: 1001 }}>
         {/* Main Content Section */}
@@ -152,7 +152,7 @@ export default function JJFPortfolioPage() {
                     technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"]
                   }
                 ].map((project, index) => (
-                  <div key={index} className="bg-[#FAFAFA] p-6 border-2 transition-all duration-500 hover:transform hover:translate-x-1 hover:translate-y-1 flex-shrink-0 w-[calc(50vw-2rem)] md:w-[calc(33.333vw-2rem)] lg:w-[300px] min-w-[280px] max-w-[300px]" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', transform: 'rotateY(0deg)' }}>
+                  <div key={index} className="bg-[#fafafc] p-6 border-2 transition-all duration-500 hover:transform hover:translate-x-1 hover:translate-y-1 flex-shrink-0 w-[calc(50vw-2rem)] md:w-[calc(33.333vw-2rem)] lg:w-[300px] min-w-[280px] max-w-[300px]" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', transform: 'rotateY(0deg)' }}>
                     {/* Project Image */}
                     <div className="mb-4 h-52 -mx-6 -mt-6 transition-all duration-300 hover:transform hover:scale-110 hover:z-10">
                       <img 
@@ -199,14 +199,14 @@ export default function JJFPortfolioPage() {
                           transition: 'all 0.3s ease'
                         }}
                         onMouseEnter={(e) => {
-                          e.target.style.backgroundColor = '#FAFAFA';
+                          e.target.style.backgroundColor = '#fafafc';
                           e.target.style.color = '#16214a';
                           e.target.style.borderColor = '#16214a';
                         }}
                         onMouseLeave={(e) => {
                           e.target.style.backgroundColor = '#16214a';
-                          e.target.style.color = '#FAFAFA';
-                          e.target.style.borderColor = '#FAFAFA';
+                          e.target.style.color = '#fafafc';
+                          e.target.style.borderColor = '#fafafc';
                         }}
                       >
                         Voir le projet
@@ -229,7 +229,7 @@ export default function JJFPortfolioPage() {
                     }
                   }}
                   className="p-2 transition-all duration-300 hover:bg-[#ffff00] hover:transform hover:translate-x-1 hover:translate-y-1"
-                  style={{ color: '#16214a', backgroundColor: '#FAFAFA' }}
+                  style={{ color: '#16214a', backgroundColor: '#fafafc' }}
                 >
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M15 18l-6-6 6-6"/>
@@ -246,7 +246,7 @@ export default function JJFPortfolioPage() {
                     }
                   }}
                   className="p-2 transition-all duration-300 hover:bg-[#ffff00] hover:transform hover:translate-x-1 hover:translate-y-1"
-                  style={{ color: '#16214a', backgroundColor: '#FAFAFA' }}
+                  style={{ color: '#16214a', backgroundColor: '#fafafc' }}
                 >
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M9 18l6-6-6-6"/>
@@ -257,7 +257,7 @@ export default function JJFPortfolioPage() {
           </div>
         </div>
       </main>
-      <div className="pt-8" style={{ backgroundColor: '#fafafa' }}></div>
+      <div className="pt-8" style={{ backgroundColor: '#fafafc' }}></div>
     </div>
   );
 }

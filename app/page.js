@@ -6,23 +6,45 @@ import { useState, useRef, useEffect } from 'react';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FAFAFA] pt-4 relative" style={{ zIndex: 1000 }}>
+    <div className="min-h-screen bg-[#fafafc] pt-4 relative" style={{ zIndex: 1000 }}>
       {/* Main Content */}
       <main className="w-full px-8 relative" style={{ zIndex: 1001 }}>
         {/* Main Content Section */}
         <div className="w-full">
 
-          {/* Nom et titre */}
-          <div className="mb-4">
-            <h4 className="text-xl font-bold mb-1" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 24' }}>
-              Jimmy Joseph Fellous
-            </h4>
-            <p className="text-base mb-1" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 20' }}>
-              17/05/1969 - Paris 11
-            </p>
-            <p className="text-lg mb-3" style={{ color: '#d92f35', fontFamily: 'Sharp Grotesk Medium 20' }}>
-              Directeur Artistique Digital & Développeur Full Stack
-            </p>
+          {/* Nom et titre avec photo */}
+          <div className="mb-4 flex flex-col md:flex-row gap-6 items-start">
+            {/* Informations personnelles */}
+            <div className="flex-1">
+              <h4 className="text-xl font-bold mb-1" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 24' }}>
+                Jimmy Joseph Fellous
+              </h4>
+              <p className="text-base mb-1" style={{ color: '#16214a', fontFamily: 'Sharp Grotesk Medium 20' }}>
+                17/05/1969 - Paris 11
+              </p>
+              <p className="text-lg mb-3" style={{ color: '#d92f35', fontFamily: 'Sharp Grotesk Medium 20' }}>
+                Directeur Artistique Digital & Développeur Full Stack
+              </p>
+            </div>
+            
+            {/* Photo */}
+            <div 
+              className="flex-shrink-0 mx-auto md:mx-0"
+              style={{
+                width: '177px',
+                height: '266px'
+              }}
+            >
+              <img 
+                src="/images/jimmy-joseph-portfolio-h.webp" 
+                alt="Jimmy Joseph Fellous - Directeur Artistique Digital & Développeur Full Stack"
+                className="w-full h-full object-cover rounded-lg"
+                style={{ 
+                  border: '2px solid #16214a',
+                  boxShadow: '4px 4px 0px #16214a'
+                }}
+              />
+            </div>
           </div>
 
           {/* Lettre de motivation Section */}
@@ -232,7 +254,7 @@ export default function Home() {
                     technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"]
                   }
                 ].map((project, index) => (
-                  <div key={index} className="bg-[#FAFAFA] p-6 border-2 transition-all duration-500 hover:transform hover:translate-x-1 hover:translate-y-1 flex-shrink-0 w-[calc(50vw-2rem)] md:w-[calc(33.333vw-2rem)] lg:w-[300px] min-w-[280px] max-w-[300px]" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', transform: 'rotateY(0deg)' }}>
+                  <div key={index} className="bg-[#fafafc] p-6 border-2 transition-all duration-500 hover:transform hover:translate-x-1 hover:translate-y-1 flex-shrink-0 w-[calc(50vw-2rem)] md:w-[calc(33.333vw-2rem)] lg:w-[300px] min-w-[280px] max-w-[300px]" style={{ boxShadow: '4px 4px 0px #16214a', borderColor: '#16214a', transform: 'rotateY(0deg)' }}>
                     {/* Project Image */}
                     <div className="mb-4 h-52 -mx-6 -mt-6 transition-all duration-300 hover:transform hover:scale-110 hover:z-10">
                       <img 
@@ -279,14 +301,14 @@ export default function Home() {
                           transition: 'all 0.3s ease'
                         }}
                         onMouseEnter={(e) => {
-                          e.target.style.backgroundColor = '#FAFAFA';
+                          e.target.style.backgroundColor = '#fafafc';
                           e.target.style.color = '#16214a';
                           e.target.style.borderColor = '#16214a';
                         }}
                         onMouseLeave={(e) => {
                           e.target.style.backgroundColor = '#16214a';
-                          e.target.style.color = '#FAFAFA';
-                          e.target.style.borderColor = '#FAFAFA';
+                          e.target.style.color = '#fafafc';
+                          e.target.style.borderColor = '#fafafc';
                         }}
                       >
                         Voir le projet
@@ -309,7 +331,7 @@ export default function Home() {
                     }
                   }}
                   className="p-2 transition-all duration-300 hover:bg-[#ffff00] hover:transform hover:translate-x-1 hover:translate-y-1"
-                  style={{ color: '#16214a', backgroundColor: '#FAFAFA' }}
+                  style={{ color: '#16214a', backgroundColor: '#fafafc' }}
                 >
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M15 18l-6-6 6-6"/>
@@ -326,7 +348,7 @@ export default function Home() {
                     }
                   }}
                   className="p-2 transition-all duration-300 hover:bg-[#ffff00] hover:transform hover:translate-x-1 hover:translate-y-1"
-                  style={{ color: '#16214a', backgroundColor: '#f9f7f2' }}
+                  style={{ color: '#16214a', backgroundColor: '#fafafc' }}
                 >
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M9 18l6-6-6-6"/>
@@ -348,7 +370,7 @@ export default function Home() {
           {/* My Story Section */}
           <div className="mb-16">
             
-            <div className="bg-[#f9f7f2] p-8 rounded-lg relative p-4 border-2 rounded-lg" style={{ borderColor: '#d92f35' }}>
+            <div className="bg-[#fafafc] p-8 rounded-lg relative border-2" style={{ borderColor: '#d92f35' }}>
               {/* Cadre d'étoiles - 1 ligne continue */}
               <div className="absolute inset-2 pointer-events-none">
                 {Array.from({ length: 160 }).map((_, i) => {

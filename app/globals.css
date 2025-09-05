@@ -428,6 +428,49 @@
     min-height: 100vh;
     overflow-x: hidden;
   }
+
+  /* Style spécifique pour iPhone uniquement */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    
+    /* Texte principal sur iPhone */
+    body * {
+      color: white !important;
+    }
+    
+    /* Exceptions pour garder certains éléments visibles */
+    .text-red-500, .text-red-600, [style*="color: #d92f35"] {
+      color: #ff6b6b !important;
+    }
+    
+    .text-blue-500, .text-blue-600, [style*="color: #16214a"] {
+      color: #4ecdc4 !important;
+    }
+    
+    /* Boutons sur iPhone */
+    button, .btn-primary {
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4) !important;
+      color: white !important;
+      border: 2px solid white !important;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
+    }
+    
+    /* Cartes et conteneurs sur iPhone */
+    .bg-white, .bg-\[#FAFAFA\], .bg-\[#f9f7f2\] {
+      background: rgba(255, 255, 255, 0.1) !important;
+      backdrop-filter: blur(10px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    /* Photo avec effet glassmorphism sur iPhone */
+    img {
+      border-radius: 20px !important;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3) !important;
+    }
+  }
   
   * {
     font-family: 'Sharp Grotesk Light 15';

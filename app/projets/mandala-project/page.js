@@ -119,7 +119,7 @@ export default function MandalaProjectPage() {
               <h3 className="text-base font-bold mb-4" style={{ color: '#16214a' }}>
                 Version Desktop
               </h3>
-              <div className="bg-white p-4 border-2" style={{ borderColor: '#16214a' }}>
+              <div className="bg-[#fafafc] p-4 border-2" style={{ borderColor: '#16214a' }}>
                 <div className="flex items-center mb-4 space-x-2">
                   <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#da2f35' }}></div>
                   <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#ff6b35' }}></div>
@@ -140,7 +140,7 @@ export default function MandalaProjectPage() {
               <h3 className="text-base font-bold mb-4" style={{ color: '#16214a' }}>
                 Version Mobile
               </h3>
-              <div className="bg-white p-4 border-2 mx-auto" style={{ maxWidth: '280px', borderColor: '#16214a' }}>
+              <div className="bg-[#fafafc] p-4 border-2 mx-auto" style={{ maxWidth: '280px', borderColor: '#16214a' }}>
                 <div className="flex items-center justify-center mb-4">
                   <div className="w-16 h-1 rounded-full" style={{ backgroundColor: '#da2f35' }}></div>
                 </div>

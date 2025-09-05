@@ -2,7 +2,7 @@
 
 export default function AProposPage() {
   return (
-    <div className="min-h-screen bg-[#fafafa] pt-8 relative" style={{ zIndex: 1000 }}>
+    <div className="min-h-screen bg-[#fafafc] pt-8 relative" style={{ zIndex: 1000 }}>
       {/* Main Content */}
       <main className="w-full px-8 relative" style={{ zIndex: 1001 }}>
         {/* Main Content Section */}
@@ -14,7 +14,7 @@ export default function AProposPage() {
               My Story
             </h3>
             
-            <div className="bg-[#f9f7f2] p-8 rounded-lg relative p-4 border-2 rounded-lg" style={{ borderColor: '#d92f35' }}>
+            <div className="bg-[#fafafc] p-8 rounded-lg relative p-4 border-2 rounded-lg" style={{ borderColor: '#d92f35' }}>
                {/* Étoiles qui suivent le contour du cadre rouge */}
                <div className="absolute inset-0 pointer-events-none">
                  {/* Étoiles en haut - se déplacent de gauche à droite */}
