@@ -39,21 +39,14 @@ export default function Header() {
 
             {/* Right-side Icons/Elements */}
             <div className="hidden md:flex items-center space-x-6 ml-auto">
-              <span className="text-3xl cursor-pointer">🍅</span>
-              <Search size={28} className="cursor-pointer hover:text-accent" style={{ color: '#16214a' }} />
-              <User size={28} className="cursor-pointer hover:text-accent" style={{ color: '#16214a' }} />
               <div className="flex items-center cursor-pointer hover:text-accent text-lg" style={{ color: '#16214a' }}>
                 <span>Français</span>
                 <ChevronDown size={20} className="ml-1" />
               </div>
-              <ShoppingCart size={28} className="cursor-pointer hover:text-accent" style={{ color: '#16214a' }} />
             </div>
 
             {/* Mobile Icons and Menu Button */}
             <div className="md:hidden flex items-center space-x-4 ml-auto">
-              <span className="text-3xl cursor-pointer">🍅</span>
-              <User size={28} className="cursor-pointer hover:text-accent" style={{ color: '#16214a' }} />
-              <ShoppingCart size={28} className="cursor-pointer hover:text-accent" style={{ color: '#16214a' }} />
                                         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="hamburger-btn focus:outline-none text-3xl transition-transform duration-300" style={{ color: '#16214a', transform: isMenuOpen ? 'rotate(90deg)' : 'rotate(0deg)' }}>
                             ➕
                           </button>
@@ -81,7 +74,6 @@ export default function Header() {
               {/* Add mobile versions of the remaining icons */}
               <div className="flex items-center space-x-4 mt-4 justify-between">
                 <div className="flex items-center space-x-4">
-                  <Search size={28} className="cursor-pointer" style={{ color: '#16214a' }} />
                   <div className="flex items-center cursor-pointer text-lg" style={{ color: '#16214a' }}>
                     <span>Français</span>
                     <ChevronDown size={20} className="ml-1" />
